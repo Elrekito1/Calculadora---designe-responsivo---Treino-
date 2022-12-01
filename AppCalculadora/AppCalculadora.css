@@ -1,0 +1,632 @@
+
+
+*{
+
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    
+    
+    
+    }
+    html, body{ 
+    
+    height: 100vh;
+    font-family: "Source Sans Pro";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    
+    
+    }
+    
+    
+    
+    body{
+    
+        font-size: 1.6rem;
+        background: url('Imagens/ocean_themed_gradient_blur_background_0509.jpg');
+    
+    }
+    
+    
+    html{ 
+    
+    
+    
+    font-size: 62.5%;/*a cada 1rem será considerado 10px */
+   
+    
+    }
+    
+.container{
+
+
+display: flex;
+justify-content: center;
+
+
+
+
+
+
+}
+
+
+
+
+
+/*Corpo da calculadora*/
+
+
+
+
+
+
+
+.calculadora{
+display: grid;
+border: solid black 2px;
+height:27rem ;
+width: 20rem;
+border-radius: 1.5rem;
+background: linear-gradient(#560020 , #42162e , #2E2C46);
+
+
+
+
+
+}
+
+
+button{
+
+
+
+background-color: #8992C4;
+
+
+
+}
+
+
+
+
+
+
+/*Header da calculadora*/
+input{
+
+    border-radius: 0.5rem;
+    font-weight: bold;
+    
+
+
+
+
+}
+
+
+/*Área para layout responsivo*/
+
+@media(max-width:400px){
+
+
+
+    .container{
+
+
+        position: relative;left: 0.5rem;
+        
+        
+        
+        
+        
+        }
+
+
+
+
+
+
+}
+@media(max-width:800px){
+
+
+
+    .container{
+
+
+        position: relative;right: 8rem;
+        
+        
+        
+        
+        
+        }
+
+
+
+
+
+
+}
+@media(max-width:1200px){
+
+
+
+    .container{
+
+
+        position: relative;right: 10rem;
+        
+        
+        
+        
+        
+        }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:500px ){
+
+
+    .container{
+
+
+        position: relative;right: 5rem;
+        
+        
+        
+        
+        
+        }
+
+
+
+
+    .calculadora{
+
+display: flex;
+justify-content: center;
+width: 20rem;
+position: relative; top: 15rem;left: 5.4rem;
+
+
+
+
+}
+
+input{
+
+height: 3rem;
+width: 17.4rem;
+display: flex;
+justify-content: center;
+position: relative;top: 2rem;left: 9.35rem;
+
+
+}
+
+
+
+
+
+
+div .item-C{
+
+display: grid;
+text-align: center;
+border: 0.2rem solid black;
+position: relative;top: 7.5rem;right: 12.8rem;
+height: 3rem;
+width:10rem ;
+border-radius: 0.6rem;
+    
+
+
+
+}
+div .item-Barra{
+
+display: grid;
+text-align: center;
+border: 0.2rem solid black;
+position: relative;top: 4.5rem;right: 2.5rem;
+height: 3rem;
+width:4rem ;
+border-radius: 0.6rem;
+    
+
+
+
+}
+div .item-X{
+
+display: grid;
+text-align: center;
+border: 0.2rem solid black;
+position: relative;top: 1.5rem;left: 1.9rem;
+height: 3rem;
+width:4.4rem ;
+border-radius: 0.6rem;
+    
+
+
+
+}
+
+
+
+
+
+
+div .item-baixo-2{
+
+display: grid;
+text-align: center;
+border: 0.2rem solid black;
+position: relative;top: 2.1rem;left: 1.5rem;
+height: 3rem;
+width:4.4rem ;
+border-radius: 0.6rem;
+margin-right: 0.3rem;
+
+    
+
+
+
+}
+
+div .conteudo{
+
+    position: relative;left: 3.85rem;
+    
+
+
+}
+
+
+
+.baixo-2{
+
+display: flex;
+position: relative;right: 14rem;
+
+
+
+
+
+
+}
+
+.baixo-3{
+
+display: flex;
+position: relative;right: 14rem;top: 0.4rem;
+
+
+
+
+
+
+}
+.baixo-4{
+
+display: flex;
+position: relative;right: 14rem;top: 0.8rem;
+
+
+
+
+
+
+}
+.baixo-5{
+
+display: flex;
+position: relative;right: 14rem;top: 0.8rem;
+
+
+
+
+
+
+}
+
+div .item-baixo-Igual{
+
+
+
+    position: relative;left: 1.7rem;top: 2.2rem;
+    width: 4.2rem;height: 8rem;
+    border-radius: 0.5rem;
+    
+    
+    }
+
+
+
+    div .item-baixo-Zero{
+
+        display: grid;
+        text-align: center;
+        border: 0.2rem solid black;
+        position: relative;bottom: 2.5rem;left: 1.5rem;
+        height: 3rem;
+        width:9rem ;
+        border-radius: 0.6rem;
+            
+        
+   
+ 
+
+
+
+}
+
+div .item-baixo-Ponto{
+
+
+display: grid;
+text-align: center;
+border: 0.2rem solid black;
+position: relative;bottom: 2.5rem;left: 1.95rem;
+height: 3rem;
+width:4.4rem ;
+border-radius: 0.6rem;
+margin-right: 0.3rem;
+
+
+
+
+
+
+}
+
+/*Conteúdo da calculadora*/
+
+
+ }
+@media(max-width:1500px ){
+
+
+    .container{
+
+
+        position: relative;right: 8rem;
+
+        
+        
+        
+        
+        
+        }
+
+
+
+
+
+
+    .calculadora{
+
+display: flex;
+justify-content: center;
+width: 20rem;
+position: relative; top: 15rem;left: 5.4rem;
+
+
+
+
+
+}
+
+input{
+
+height: 3rem;
+width: 17.4rem;
+display: flex;
+justify-content: center;
+position: relative;top: 2rem;left: 9.35rem;
+
+
+
+}
+
+
+
+
+
+
+div .item-C{
+
+display: grid;
+text-align: center;
+border: 0.2rem solid black;
+position: relative;top: 7.5rem;right: 12.8rem;
+height: 3rem;
+width:10rem ;
+border-radius: 0.6rem;
+    
+
+
+
+}
+div .item-Barra{
+
+display: grid;
+text-align: center;
+border: 0.2rem solid black;
+position: relative;top: 4.5rem;right: 2.5rem;
+height: 3rem;
+width:4rem ;
+border-radius: 0.6rem;
+    
+
+
+
+}
+div .item-X{
+
+display: grid;
+text-align: center;
+border: 0.2rem solid black;
+position: relative;top: 1.5rem;left: 1.9rem;
+height: 3rem;
+width:4.4rem ;
+border-radius: 0.6rem;
+    
+
+
+
+}
+
+
+
+
+
+
+div .item-baixo-2{
+
+display: grid;
+text-align: center;
+border: 0.2rem solid black;
+position: relative;top: 2.1rem;left: 1.5rem;
+height: 3rem;
+width:4.4rem ;
+border-radius: 0.6rem;
+margin-right: 0.3rem;
+
+    
+
+
+
+}
+
+div .conteudo{
+    
+    position: relative;left: 3.85rem;
+    
+    
+    
+
+
+}
+
+
+
+.baixo-2{
+
+display: flex;
+position: relative;right: 14rem;
+
+
+
+
+
+
+}
+
+.baixo-3{
+
+display: flex;
+position: relative;right: 14rem;top: 0.4rem;
+
+    
+
+
+
+
+
+}
+.baixo-4{
+
+display: flex;
+position: relative;right: 14rem;top: 0.8rem;
+
+
+
+
+
+
+}
+.baixo-5{
+
+display: flex;
+position: relative;right: 14rem;top: 0.8rem;
+
+
+
+
+
+
+}
+
+div .item-baixo-Igual{
+
+
+
+    position: relative;left: 1.7rem;top: 2.2rem;
+    width: 4.2rem;height: 8rem;
+    border-radius: 0.5rem;
+    
+    
+    }
+
+
+
+    div .item-baixo-Zero{
+
+        display: grid;
+        text-align: center;
+        border: 0.2rem solid black;
+        position: relative;bottom: 2.5rem;left: 1.5rem;
+        height: 3rem;
+        width:9rem ;
+        border-radius: 0.6rem;
+            
+        
+   
+ 
+
+
+
+}
+
+div .item-baixo-Ponto{
+
+
+display: grid;
+text-align: center;
+border: 0.2rem solid black;
+position: relative;bottom: 2.5rem;left: 1.95rem;
+height: 3rem;
+width:4.4rem ;
+border-radius: 0.6rem;
+margin-right: 0.3rem;
+
+
+
+
+
+
+}
+
+/*Conteúdo da calculadora*/
+
+
+ }
+
+
